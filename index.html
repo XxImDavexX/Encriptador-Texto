@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport"   content="width=device-width,initial-scale=1.0">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <header>
+            <div class="encabezado">
+                <h1 class="texto" >Encriptador de texto</h1>
+            </div>
+            
+        </header>
+        <main>
+            <section class="seccion1">
+                <textarea id="textoEncriptarDesencriptar" class="texto-encriptar" cols="100" row="1000"  placeholder="Inserta el texto a encriptar/desencriptar"></textarea> 
+                <div class="botones">
+                    <input type="button" onclick="encriptarTexto()" value="Encriptar" id="btnEncriptar">
+                    <input type="button" onclick="desencriptarTexto()" value="Desencriptar" id="btnDesencriptar"
+                </div>
+            </section>
+            <section class="seccion2">
+                <textarea id="textoFinal" class="texto-final" cols="100" row="500" disabled></textarea>
+                <div>
+                    <button class="copiar">Copiar</button>
+                </div>
+            </section>
+            
+        </main>
+        <script src="appV2.js"></script>
+    </body>
+
+</html>
